@@ -12,13 +12,6 @@ h1.setFormatter(f)
 h1.setLevel(logging.DEBUG)
 x.addHandler(h1)
 
-# This handler emails me anything that is an error or worse.
-#h2 = logging.handlers.SMTPHandler('localhost', 'j1mbob200@example.com', ['j1mbob200@yahoo.com'], 'ERROR log')
-#h2.setLevel(logging.DEBUG)
-#h2.setFormatter(f)
-#x.addHandler(h2)
-
-
 class MyWSGIRefServer(ServerAdapter):
     server = None
 
